@@ -4,7 +4,7 @@ import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import Alert from './components/Alert';
+// import Alert from './components/Alert';
 import {
   BrowserRouter as Router,
   Routes,
@@ -55,7 +55,7 @@ function App() {
     <>
     <Router>
       <Navbar mode={mode} DarkMode={changemode} modetext={modetext} showalert={showAlert} />
-      <Alert alert={alert} />
+//       <Alert alert={alert} />
       <Routes>
         <Route exact path="/about" element={<About/>}/>
         <Route exact path="/" element={<TextForm headingName="Enter the text" mode={changemode} showalert={showAlert} />} />
