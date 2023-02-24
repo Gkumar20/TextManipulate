@@ -43,10 +43,10 @@ export default function TextForm(props){
         <h1>{props.headingName}</h1>
         <div className="mb-3" >
             <textarea className="form-control" style={{backgroundColor:props.mode}} id="myText" value={text} onChange={handleOnChange} rows="8"></textarea>
-            <button className="btn btn-primary my-3 mx-1" onClick={handleUpClick} >Convert to UPPERCASE</button>
-            <button className="btn btn-primary my-3 mx-1" onClick={handleLoClick} >Convert to lowercase</button>
-            <button className="btn btn-primary my-3 mx-1" onClick={showPrevClick}  >{ShowButton}</button>
-            <button className="btn btn-primary my-3 mx-1" onClick={textClearClick}  >Clear text</button>
+            <button className="btn btn-primary my-3 mx-1 buttondec" onClick={handleUpClick} >Convert to UPPERCASE</button>
+            <button className="btn btn-primary my-3 mx-1 buttondec" onClick={handleLoClick} >Convert to lowercase</button>
+            <button className="btn btn-primary my-3 mx-1 buttondec" onClick={showPrevClick}  >{ShowButton}</button>
+            <button className="btn btn-primary my-3 mx-1 buttondec" onClick={textClearClick}  >Clear text</button>
         </div>
         <div className="container my-3">
           <h2>Word & Character count</h2>
